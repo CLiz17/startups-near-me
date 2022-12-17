@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <!--stylesheet-->
+  <link rel="stylesheet" href="style.css" class="stylesheet" />
+
+  <title>startups-near-me</title>
+</head>
+<body>
+  
+    <!-- header -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <a href="index.html" class="logo">
+            </a>
+            <ul class="nav">
+              <li><a href="index.html" class="active">Home</a></li>
+              <!-- <li><a href="listing.html">Listing</a></li> -->
+              <li><div class="login-btn"><a href=""><i></i>Login</a></div></li> 
+              <li><div class="sign-up-btn"><a href=""><i></i>Sign Up</a></div></li> 
+            </ul>        
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header -->
+
+  <!-- search-bar-->
+  <div class="main-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="top-text header-text">
+            <h1>startups-near-me</h1>
+            <h2>Find local Startups around you!</h2>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <form id="search-for-startups" method="submit" role="search" action="#">
+            <div class="row">
+              <div class="col-lg-3 align-self-center">
+                  <fieldset>
+                      <input type="address" name="address" class="searchText" placeholder="Startup name" autocomplete="on" required>
+                  </fieldset>
+              </div>
+              <div>
+                  <fieldset>
+                      <select name="area" class="form-select" aria-label="Area" id="chooseCategory" onchange="this.form.click()">
+                          <option value="Palakkad">Palakkad</option>
+                          <option value="Thrissur">Thrissur</option>
+                          <option value="Ernakulam">Ernakulam</option>
+                      </select>
+                  </fieldset>
+              </div>
+              <div class="col-lg-3 align-self-center">
+                  <fieldset>
+                      <select name="price" class="form-select" aria-label="Default select example" id="chooseCategory" onchange="this.form.click()">
+                          <option value="Fintech">Fintech</option>
+                          <option value="Education">Education</option>
+                          <option value="Lifestyle">Lifestyle</option>
+                          <option value="Social">Social</option>
+                      </select>
+                  </fieldset>
+              </div>
+              <div class="col-lg-3">                        
+                  <fieldset>
+                      <button class="main-button"><i class="fa fa-search"></i> Search Now</button>
+                  </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<!--<div class="gallery" user-cards-container></div>
+
+    <template user-template>
+      <div id="profile-card" class="card">
+        <img class="profile-img" src="img1.jpg" user-image />
+        <h1 user-name></h1>
+        <a user-url class="inherit-color" target="_blank">
+          <i class="fa-brands fa-github">
+            <span user-username></span>
+          </i>
+        </a>
+        <h2 class="current_pos" user-position></h2>
+        <h3 user-place></h3>
+        <p user-bio></p>
+      </div>
+    </template>
+
+    <div id="temp"></div> -->
+
+  <!--font awesome-->
+  <script src="https://kit.fontawesome.com/576638e44b.js" crossorigin="anonymous"></script>
+  
+  <!--script file-->
+  <script src="script.js" defer></script>
+</body>
+
+</html>
