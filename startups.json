@@ -1,16 +1,19 @@
 [
   {
     "name": "New startup1",
+    "email": "liz362002@gmail.com",
     "place": "Palakkad",
     "image": "logo1.jpg"
   },
   {
     "name": "New startup2",
+    "email": "liz362002@gmail.com",
     "place": "Palakkad",
     "image": "logo1.jpg"
   },
   {
     "name": "New startup3",
+    "email": "liz362002@gmail.com",
     "place": "Palakkad",
     "image": "logo1.jpg"
   }

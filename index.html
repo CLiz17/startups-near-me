@@ -4,42 +4,38 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>startups-near-me!</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     </head>
-
     <body>
-
         <!--navbar-->
-        <nav class="navbar py-5 px-5" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
+        <nav class="navbar py-3 px-3" role="navigation" aria-label="main navigation">
+            <!-- <div class="navbar-brand">
                 <a class="navbar-item" href="#">
-                    <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+                    <img src="colour-logo.png" width="" height="400px">
                 </a>
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
-            </div>
+            </div> -->
             <div id="navbarBasicExample" class="navbar-menu">
                 <div class="navbar-start">
-                    <a class="navbar-item">
+                    <a class="navbar-item is-size-5">
                         Home
                     </a>
-                    <a class="navbar-item">
-                        Documentation
+                    <a class="navbar-item is-size-5">
+                        About
+                    </a>
+                    <a class="navbar-item is-size-5">
+                        Search
                     </a>
                 </div>
             </div>
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
-                    <a class="button is-primary">
-                        <strong>Sign up</strong>
-                    </a>
-                    <a class="button is-light">
-                        Log in
-                    </a>
+                    <a class="button is-danger">
+                        <strong>Resigter</strong></a>
+                    <a class="button is-primary">Sign up</a>
+                    <a class="button is-info">Log in</a>
                     </div>
                 </div>
             </div>
@@ -61,7 +57,7 @@
                 <!--search bar-->
                 <div class="subtitle field is-grouped py-5 px-4">
                     <p class="control is-expanded has-text-centered">
-                        <input class="input" type="text" placeholder="Search for StartUps..">
+                        <input type="search" id="search" data-search class="input" placeholder="Search for StartUps..">
                     </p>
                     <p class="control">
                         <a class="button is-success">
@@ -76,76 +72,21 @@
 
         <!-- startup cards-->
         <div class="tile is-ancestor">
-            <div class="tile py-5 px-5">
+          <div class="user-cards" data-user-cards-container></div>
+          <template data-user-template>
+            <div class="card">
+              <!-- card details-->
+              <div class="tile py-5 px-5">
                 <article class="tile is-child notification is-info">
-                    <figure class="image is-4by3">
-                        <img src="data/logo1.jpg">
-                    </figure>
-                    <p class="title">Startup 1</p>
-                    <span class="tag">Tag label</span>
-                    <span class="tag">Tag label</span>
-                    <span class="tag">Tag label</span>
-                    <footer class="card-footer">
-                        <a href="#" class="card-footer-item">Save</a>
-                        <a href="#" class="card-footer-item">Edit</a>
-                        <a href="#" class="card-footer-item">Delete</a>
-                    </footer>
+                  <div class="header" data-header></div>
+                  <div class="body" data-body></div>
                 </article>
+              </div>
+              <!-- card details end-->
             </div>
-            <div class="tile py-5 px-5">
-                <article class="tile is-child notification is-info">
-                    <figure class="image is-4by3">
-                        <img src="data/logo1.jpg">
-                    </figure>
-                    <p class="title">Startup 2</p>
-                    <span class="tag">Tag label</span>
-                    <span class="tag">Tag label</span>
-                </article>
-            </div>
-            <div class="tile py-5 px-5">
-                <article class="tile is-child notification is-info">
-                    <figure class="image is-4by3">
-                        <img src="data/logo1.jpg">
-                    </figure>
-                    <p class="title">Startup 3</p>
-                    <span class="tag">Tag label</span>
-                    <span class="tag">Tag label</span>
-                </article>
-            </div>
+          </template>
         </div>
-        <div class="tile">
-            <div class="tile py-5 px-5">
-                <article class="tile is-child notification is-info">
-                    <figure class="image is-4by3">
-                        <img src="data/logo1.jpg">
-                    </figure>
-                    <p class="title">Startup 4</p>
-                    <span class="tag">Tag label</span>
-                    <span class="tag">Tag label</span>
-                </article>
-            </div>
-            <div class="tile py-5 px-5">
-                <article class="tile is-child notification is-info">
-                    <figure class="image is-4by3">
-                        <img src="data/logo1.jpg">
-                    </figure>
-                    <p class="title">Startup 5</p>
-                    <span class="tag">Tag label</span>
-                    <span class="tag">Tag label</span>
-                </article>
-            </div>
-            <div class="tile py-5 px-5">
-                <article class="tile is-child notification is-info">
-                    <figure class="image is-4by3">
-                        <img src="data/logo1.jpg">
-                    </figure>
-                    <p class="title">Startup 6</p>
-                    <span class="tag">Tag label</span>
-                    <span class="tag">Tag label</span>
-                </article>
-            </div>
-        </div>
-        <!-- startup cards end->
+        <!-- startup cards end-->
         
         <!-- footer-->
         <footer class="footer">
