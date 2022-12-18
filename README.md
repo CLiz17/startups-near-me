@@ -5,7 +5,7 @@ Find local Startups around you!
 
 # IDEA-
 Our idea is to promote **Local Startups** to get reach and attain its popularity
-andxx this this can benefit the startups in finding a Angel Investors and Funding/Recognition for their ideas and efforts.
+and this can benefit the startups in finding Angel Investors and Funding/Recognition for their ideas and efforts.
 Additionally, it will provide a platform for recent graduates like us to work for these startups in accordance with their job openings, which will be listed on the website.
 Since startups have the finest cultures and environments for _learning_.
 
