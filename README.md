@@ -27,3 +27,4 @@ Since startups have the finest cultures and environments for _learning_.
   Clone the repository startups-near-me and run it locally on GITHUB. 
   STARTUPS-NEAR-ME can be either run in the live-server of VS-CODE or after cloning index.html file should be clicked to view the main website homepage.
   The main functionality of our app is sorting and searching of startups based on the type of Startup, Founder of the startup and Location of establishment. 
+<img width="1000" alt="Group 16 (2)" src="https://user-images.githubusercontent.com/84219262/208286179-093239ab-e696-41bf-984a-32df04514956.png">
