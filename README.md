@@ -1,4 +1,4 @@
-<img width="400" alt="Group 18 (1)" src="https://user-images.githubusercontent.com/84219262/208283727-4f299f23-eb47-41fc-9406-5de876ab28a3.png">
+<img width="400" alt="Group 18 (1)" src="https://user-images.githubusercontent.com/84219262/208286070-75295b4f-34c3-4819-999d-3855fd45963f.png">
 
 # STARTUPS-NEAR-ME
 Find local Startups around you! 
