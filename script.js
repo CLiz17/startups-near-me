@@ -9,7 +9,7 @@ searchInput.addEventListener("input", e => {
   users.forEach(user => {
     const isVisible =
       user.name.toLowerCase().includes(value) ||
-      user.email.toLowerCase().includes(value)
+      user.place.toLowerCase().includes(value)
     user.element.classList.toggle("hide", !isVisible)
   })
 })
@@ -22,8 +22,8 @@ fetch("startups.json")
       const header = card.querySelector("[data-header]")
       const body = card.querySelector("[data-body]")
       header.textContent = user.name
-      body.textContent = user.email
+      body.textContent = user.place
       userCardContainer.append(card)
-      return { name: user.name, email: user.email, element: card }
+      return { name: user.name, place: user.place, element: card }
     })
   })

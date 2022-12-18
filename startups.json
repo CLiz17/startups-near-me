@@ -1,20 +1,22 @@
 [
   {
-    "name": "New startup1",
-    "email": "liz362002@gmail.com",
+    "name": "DreamBee",
     "place": "Palakkad",
-    "image": "logo1.jpg"
+    "type": "E-Commerce"
   },
   {
-    "name": "New startup2",
-    "email": "liz362002@gmail.com",
-    "place": "Palakkad",
-    "image": "logo1.jpg"
+    "name": "Corr Robotics",
+    "place": "Ernakulam",
+    "type": "Technology"
   },
   {
-    "name": "New startup3",
-    "email": "liz362002@gmail.com",
-    "place": "Palakkad",
-    "image": "logo1.jpg"
+    "name": "Gagan Aerospace",
+    "place": "Thrissur",
+    "type": "Aeronotics"
+  },
+  {
+    "name": "Skavengers",
+    "place": "Kozhikode",
+    "type": "Environment"
   }
 ]

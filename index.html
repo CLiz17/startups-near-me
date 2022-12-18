@@ -32,22 +32,28 @@
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
-                    <a class="button is-danger">
+                    <a class="button is-link">
                         <strong>Resigter</strong></a>
                     <a class="button is-primary">Sign up</a>
                     <a class="button is-info">Log in</a>
-                    </div>
+                    <a class="button is-black"> 
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>&nbsp&nbspContribute!
+                    </a>
+                  </div>
                 </div>
             </div>
         </nav>
         <!--navbar ends-->
 
         <!--hero section-->
-        <section class="hero is-large is-info">
+        <section class="hero is-small">
             <div class="hero-body">
                 <div class="tittle content has-text-centered">
+                    <img src="main-logo-50.png" height="20px" width="auto">
                     <h1 class="title is-size-1">
-                        startups-near-me
+                        STARTUPS NEAR ME
                     </h1>
                     <p class="subtitle is-size-3">
                         Find <strong>local</strong> Startups around you!
@@ -60,7 +66,7 @@
                         <input type="search" id="search" data-search class="input" placeholder="Search for StartUps..">
                     </p>
                     <p class="control">
-                        <a class="button is-success">
+                        <a class="button is-link">
                         Search for StartUps..
                         </a>
                     </p>
@@ -77,7 +83,7 @@
             <div class="card">
               <!-- card details-->
               <div class="tile py-5 px-5">
-                <article class="tile is-child notification is-info">
+                <article class="tile is-child notification is-link is-light">
                   <div class="header" data-header></div>
                   <div class="body" data-body></div>
                 </article>
@@ -87,7 +93,16 @@
           </template>
         </div>
         <!-- startup cards end-->
-        
+
+        <div class="user-cards" data-user-cards-container></div>
+
+        <template data-user-template>
+          <div class="card">
+            <div class="header" data-header></div>
+            <div class="body" data-body></div>
+          </div>
+        </template>
+
         <!-- footer-->
         <footer class="footer">
             <div class="content has-text-centered">
@@ -98,4 +113,6 @@
         </footer>
         <!-- footer end-->
     </body>
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/576638e44b.js" crossorigin="anonymous"></script>
 </html>

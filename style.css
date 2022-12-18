@@ -1,15 +1,12 @@
-input {
-  font-size: 50px;
-}
-
 .user-cards {
-  margin:120px;
+  display: flex;
+  flex-direction: row;
 }
 
 .card {
-  
+  padding:10px 150px 80px 150px;
 }
- 
+
 .hide {
   display: none;
 }
