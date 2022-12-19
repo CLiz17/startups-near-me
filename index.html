@@ -4,9 +4,17 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>startups-near-me!</title>
+
+        <!--stylesheet-->
         <link rel="stylesheet" href="styles.css">
-        <script src="script.js" defer></script>
+        <!--bulma stylesheet-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+        <!--favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="favicon_io/site.webmanifest">
     </head>
     <body>
         <!--navbar-->
@@ -51,7 +59,7 @@
         <section class="hero is-small">
             <div class="hero-body">
                 <div class="tittle content has-text-centered">
-                    <img src="main-logo-50.png" height="20px" width="auto">
+                    <img src="assets/main-logo-50.png" height="20px" width="auto">
                     <h1 class="title is-size-1">
                         STARTUPS NEAR ME
                     </h1>
@@ -84,8 +92,9 @@
               <!-- card details-->
               <div class="tile py-5 px-5">
                 <article class="tile is-child notification is-link is-light">
-                  <div class="header" data-header></div>
-                  <div class="body" data-body></div>
+                    <div class="name" data-name></div>
+                    <div class="place" data-place></div>
+                    <div class="type" data-type></div>
                 </article>
               </div>
               <!-- card details end-->
@@ -98,8 +107,9 @@
 
         <template data-user-template>
           <div class="card">
-            <div class="header" data-header></div>
-            <div class="body" data-body></div>
+            <div class="name" data-name></div>
+            <div class="place" data-place></div>
+            <div class="type" data-type></div>
           </div>
         </template>
 
@@ -113,6 +123,9 @@
         </footer>
         <!-- footer end-->
     </body>
+
+    <!--script file-->
+    <script src="script.js" defer></script>
     <!--font awesome-->
     <script src="https://kit.fontawesome.com/576638e44b.js" crossorigin="anonymous"></script>
 </html>

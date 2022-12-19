@@ -9,7 +9,8 @@ searchInput.addEventListener("input", e => {
   users.forEach(user => {
     const isVisible =
       user.name.toLowerCase().includes(value) ||
-      user.place.toLowerCase().includes(value)
+      user.place.toLowerCase().includes(value) ||
+      user.type.tolowerCase().includes(value)
     user.element.classList.toggle("hide", !isVisible)
   })
 })
@@ -19,11 +20,13 @@ fetch("startups.json")
   .then(data => {
     users = data.map(user => {
       const card = userCardTemplate.content.cloneNode(true).children[0]
-      const header = card.querySelector("[data-header]")
-      const body = card.querySelector("[data-body]")
-      header.textContent = user.name
-      body.textContent = user.place
+      const name = card.querySelector("[data-name]")
+      const place = card.querySelector("[data-place]")
+      const type = card.querySelector("[data-type]")
+      name.textContent = user.name
+      place.textContent = user.place
+      type.textContent = user.type
       userCardContainer.append(card)
-      return { name: user.name, place: user.place, element: card }
+      return { name: user.name, place: user.place, type: user.type, element: card }
     })
   })
